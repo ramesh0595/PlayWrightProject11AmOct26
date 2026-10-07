@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<testsuite name="Cucumber" time="15.034" tests="2" skipped="0" failures="2" errors="0" timestamp="2026-10-06T06:05:33.842Z">
+  <testcase classname="To validate the login functionallity of the facebook application" name="Login-Invalid To validate the login functionallity with Invalid Credentials" time="7.392">
+    <failure type="AssertionError" message="The expression evaluated to a falsy value:&#xA;&#xA;  assert.ok(currentURL.includes(&quot;Facebook&quot;))&#xA;"><![CDATA[AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+  assert.ok(currentURL.includes("Facebook"))
+
+    + expected - actual
+
+    -false
+    +true
+
+    at AllureCucumberWorld.<anonymous> (file:///D:/PlayWrightProject/CucumberPlaywright11AMSep26/tests/Stepdefinition/LoginSteps.js:26:10)
+    at async wrapPromiseWithTimeout (D:\PlayWrightProject\CucumberPlaywright11AMSep26\node_modules\@cucumber\cucumber\lib\time.js:34:12)
+    at async Object.run (D:\PlayWrightProject\CucumberPlaywright11AMSep26\node_modules\@cucumber\cucumber\lib\user_code_runner.js:64:22)
+    at async Object.run (D:\PlayWrightProject\CucumberPlaywright11AMSep26\node_modules\@cucumber\cucumber\lib\runtime\step_runner.js:31:26)
+    at async TestCaseRunner.invokeStep (D:\PlayWrightProject\CucumberPlaywright11AMSep26\node_modules\@cucumber\cucumber\lib\runtime\test_case_runner.js:91:16)
+    at async TestCaseRunner.runStep (D:\PlayWrightProject\CucumberPlaywright11AMSep26\node_modules\@cucumber\cucumber\lib\runtime\test_case_runner.js:271:26)
+    at async D:\PlayWrightProject\CucumberPlaywright11AMSep26\node_modules\@cucumber\cucumber\lib\runtime\test_case_runner.js:179:44
+    at async TestCaseRunner.aroundTestStep (D:\PlayWrightProject\CucumberPlaywright11AMSep26\node_modules\@cucumber\cucumber\lib\runtime\test_case_runner.js:119:32)
+    at async TestCaseRunner.runAttempt (D:\PlayWrightProject\CucumberPlaywright11AMSep26\node_modules\@cucumber\cucumber\lib\runtime\test_case_runner.js:161:13)
+    at async TestCaseRunner.run (D:\PlayWrightProject\CucumberPlaywright11AMSep26\node_modules\@cucumber\cucumber\lib\runtime\test_case_runner.js:135:35)]]></failure>
+    <system-out><![CDATA[Given The user should be in login page......................................passed
+When The user has to fill username "ramesh@gmail.com" and password "123456789"..passed
+And The user has to click the login button..................................passed
+Then The user should be navigated in Invalid login page.....................failed]]></system-out>
+  </testcase>
+  <testcase classname="To validate the login functionallity of the facebook application" name="Login-Valid To validate the login functionallity with Invalid Credentials" time="7.521">
+    <failure type="AssertionError" message="The expression evaluated to a falsy value:&#xA;&#xA;  assert.ok(currentURL.includes(&quot;Facebook&quot;))&#xA;"><![CDATA[AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+  assert.ok(currentURL.includes("Facebook"))
+
+    + expected - actual
+
+    -false
+    +true
+
+    at AllureCucumberWorld.<anonymous> (file:///D:/PlayWrightProject/CucumberPlaywright11AMSep26/tests/Stepdefinition/LoginSteps.js:26:10)
+    at async wrapPromiseWithTimeout (D:\PlayWrightProject\CucumberPlaywright11AMSep26\node_modules\@cucumber\cucumber\lib\time.js:34:12)
+    at async Object.run (D:\PlayWrightProject\CucumberPlaywright11AMSep26\node_modules\@cucumber\cucumber\lib\user_code_runner.js:64:22)
+    at async Object.run (D:\PlayWrightProject\CucumberPlaywright11AMSep26\node_modules\@cucumber\cucumber\lib\runtime\step_runner.js:31:26)
+    at async TestCaseRunner.invokeStep (D:\PlayWrightProject\CucumberPlaywright11AMSep26\node_modules\@cucumber\cucumber\lib\runtime\test_case_runner.js:91:16)
+    at async TestCaseRunner.runStep (D:\PlayWrightProject\CucumberPlaywright11AMSep26\node_modules\@cucumber\cucumber\lib\runtime\test_case_runner.js:271:26)
+    at async D:\PlayWrightProject\CucumberPlaywright11AMSep26\node_modules\@cucumber\cucumber\lib\runtime\test_case_runner.js:179:44
+    at async TestCaseRunner.aroundTestStep (D:\PlayWrightProject\CucumberPlaywright11AMSep26\node_modules\@cucumber\cucumber\lib\runtime\test_case_runner.js:119:32)
+    at async TestCaseRunner.runAttempt (D:\PlayWrightProject\CucumberPlaywright11AMSep26\node_modules\@cucumber\cucumber\lib\runtime\test_case_runner.js:161:13)
+    at async TestCaseRunner.run (D:\PlayWrightProject\CucumberPlaywright11AMSep26\node_modules\@cucumber\cucumber\lib\runtime\test_case_runner.js:135:35)]]></failure>
+    <system-out><![CDATA[Given The user should be in login page......................................passed
+When The user has to fill username "mano@gmail.com" and password "3145367123"..passed
+And The user has to click the login button..................................passed
+Then The user should be navigated in Invalid login page.....................failed]]></system-out>
+  </testcase>
+</testsuite>

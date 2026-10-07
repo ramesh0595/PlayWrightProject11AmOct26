@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<testsuite name="Cucumber" time="6.852" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-09-30T06:02:18.185Z">
+  <testcase classname="To validate the login functionallity of the facebook application" name="Login-Invalid To validate the login functionallity with Invalid Credentials" time="6.802">
+    <system-out><![CDATA[Given The user should be in login page......................................passed
+When The user has to fill username "ramesh@gmail.com" and password "123456789"..passed
+And The user has to click the login button..................................passed
+Then The user should be navigated in Invalid login page.....................passed]]></system-out>
+  </testcase>
+</testsuite>

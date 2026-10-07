@@ -1,0 +1,20 @@
+module.exports={
+    default:{
+        
+        require:[
+            "tests/Stepdefinition/*.js"
+        ],
+        tags:"@E2E",
+        dryRun:false,
+        format:[
+            "progress",
+            "json:reports/cucumber_report.json",
+            "html:reports/cucumber_report.html",
+            "junit:reports/cucumber_report.xml",
+            "allure-cucumberjs/reporter"
+        ],
+        formatOptions:{
+            resultsDir:"allure-results"
+        }
+    }
+}

@@ -9,7 +9,7 @@ Before(async function () {
 });
 
 After(async function (Scenario) {
-  
+
   //Take screenshot all failed scenarios omly
  if(Scenario.result.status==="FAILED"){
    const scenarioName = Scenario.pickle.name
@@ -25,4 +25,19 @@ After(async function (Scenario) {
  }
  
   await utils.pageClose(this.page);
+
+  await this.page.screenshot({ path: "tests/Screenshots/image.png" });
+  await this.page.screenshot({ path: `tests/Screenshots/${Date.now()}image.png` });
+
+  //Take screenshot all passed and failed scenarios
+  const scenarioName = Scenario.pickle.name
+    .trim()
+    .replace(/[^a-zA-Z0-9]/g, "_");
+  const filepath = `tests/ScreenShots/${scenarioName}.png`;
+
+  const screenshot = await this.page.screenshot({
+    path: filepath,
+    fullPage: true,
+  });
+
 });
